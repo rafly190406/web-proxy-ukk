@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan Diri - Rafly Helfian Pratama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4CAF50, #2E8B57);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            color: white;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: fadeInDown 1s forwards;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 600px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1s forwards 0.5s;
+            color: black;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: block;
+            margin: 0 auto 20px auto;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1s forwards 1s;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1.5s;
+        }
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            opacity: 0;
+            animation: fadeIn 1s forwards 2s;
+        }
+        @keyframes fadeInDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pengenalan Diri</h1>
+    </header>
+
+    <div class="container">
+        <h2>Hallo, Selamat Datang di web saya</h2>
+        <img src="saya.jpg" alt="Foto Rafly Helfian Pratama">
+        <p>
+            Nama saya adalah Rafly Helfian Pratama. Saya lahir di Lubuk Basung, Sumatera Barat pada tanggal 19 April 2006.
+        </p>
+        <p>
+            Sekarang saya tinggal di Bukittinggi
+        </p>
+    </div>
+
+</body>
+
+</html>
